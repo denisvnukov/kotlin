@@ -1,0 +1,11 @@
+// "Create abstract function 'bar'" "true"
+
+interface I {
+    fun bar()
+}
+
+class Foo : I {
+    fun foo() {
+        <caret>bar()
+    }
+}
